@@ -1,4 +1,4 @@
-- Explanation of Krishnu 1 project or ML Assignment 1:
+- Explanation of Krishnu 1st project or ML Assignment 1:
 
 Step 1.*Import Necessary Libraries:*
   In python
@@ -49,7 +49,7 @@ Step 6.*Display Summary Statistics:*
    - *Details:* describe() is a DataFrame method that computes summary statistics such as mean, standard deviation, minimum, and maximum values for numerical columns.This helps in understanding the distribution and range of feature values.
 
 
-- *Explanation of Krishnu 2 or ML Assignment 2:*
+- *Explanation of Krishnu 2nd Project or ML Assignment 2:*
 - Step 1: Import Necessary Libraries
 In python
 from sklearn.datasets import load_iris
@@ -95,7 +95,43 @@ print(f"Number of testing samples: {len(X_test)}")
 
 - *`len(X_train)`*: This calculates the number of samples in the training set by finding the length of the `X_train` array.
 
-- **`len(X_test)`**: This calculates the number of samples in the testing set by finding the length of the `X_test` array.
+- **`len(X_test)`**: This calculates the number of samples in the testing set by finding the length of the `X_test` array
 
 - The `print` statements output the number of samples in the training and testing sets to the console. This information helps verify that the split was done correctly and gives insight into the size of each dataset.
+
+- *Explanation of Krishnu 3rd Project or ML Assginment 3:*
+
+Step 1. *Import necessary libraries:
+   - pandas: For data manipulation and creation of DataFrames.
+   - numpy: For numerical operations (though not strictly necessary here, it's often used).
+   - train_test_split from sklearn.model_selection: To split the dataset into training and testing sets.
+   - LinearRegression from sklearn.linear_model: To create the linear regression model.
+   - mean_squared_error from sklearn.metrics: To evaluate the model's performance.
+
+Step 2. *Create a sample dataset*:
+   - A dictionary data is defined with YearsExperience and Salary.
+   - The dictionary is then converted into a DataFrame using pd.DataFrame().
+
+Step 3. *Define features and target variable*:
+   - X represents the feature (independent variable) which is YearsExperience.
+   - y represents the target variable (dependent variable) which is Salary.
+
+Step 4. *Split the data into training and testing sets*:
+   - The train_test_split function is used to split the data into training (80%) and testing (20%) sets.
+   - random_state=42 ensures that the split is reproducible.
+
+Step 5. *Create and fit the linear regression model*:
+   - An instance of LinearRegression is created.
+   - The model is fitted using the training data with the fit method.
+
+Step 6. *Make predictions on the test set*:
+   - The predict method is used to make predictions on the test data (X_test).
+
+Step 7. *Calculate Mean Squared Error*:
+   - mean_squared_error computes the MSE between the actual values (y_test) and the predicted values (y_pred).
+
+Step 8. *Print the results*:
+   - Output the MSE to evaluate the model’s performance.
      
+
+
